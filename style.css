@@ -1,0 +1,348 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: Helvetica, sans-serif;
+
+    overflow-x: hidden;
+}
+
+:root{
+    --cinza: #8c8c8c;
+}
+
+html, body{
+   width: 100%;
+   height: 100%; 
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header, main{
+    background: rgba(0, 0, 0, 0.418);  
+}
+
+.container{
+    display: grid;
+
+    grid-template-columns: auto;
+    grid-template-rows: 88px 700px 300px;
+
+    grid-template-areas: 
+                        "h"
+                        "m"
+                        "f";
+
+    background-image: url("./img/netlix_plano_de_fundo.jpg");
+    background-size: 100% 100%;
+}
+
+/*Header----------------------*/
+
+header{
+    grid-area: "h";
+
+    padding-left: 30px;
+
+    display: grid;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+#logo{
+    width: 150px;
+    height: 90px;
+}
+
+
+/*main--------------------------------*/
+main{
+
+    grid-area: "m";
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#form-div{
+    width: 400px;
+    height: 600px;
+
+
+    background-color: black;
+
+    border-radius: 5px;
+
+    padding: 60px 68px 40px;
+}
+
+h1{
+    color: white;
+    font-size: 32px;
+
+    margin-bottom: 28px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 6px;
+}
+
+input{
+
+    height: 50px;
+
+    background-color: #333;
+
+    margin-bottom: 16px;
+
+    padding: 4px 15px 0;
+
+    font-size: 16px;
+    color: var(--cinza);
+
+    border-radius: 2px;
+
+    border: none;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+
+    background-color: red;
+    color: white;
+
+    font-size: 16px;
+
+    border: none;
+    border-radius: 2px;
+
+    padding: 7px;
+
+    cursor: pointer;
+
+    margin-bottom: 10px;
+}
+
+#remember-div{
+    color: var(--cinza);
+
+    font-size: 13px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 45px;
+}
+
+#remember-div a{
+    color: var(--cinza)
+}
+
+#check{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+}
+
+#fake-check{
+    display: inline-flex;
+
+    background-color: var(--cinza);
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 2px;
+
+    margin-right: 4px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+label{
+    display: flex;
+    align-items: center;
+}
+
+#face-div{
+    display: flex;
+
+    margin-bottom: 16px;
+}
+
+#face-icon{
+    width: 20px;
+    height: 20px;
+
+    margin-right: 4px;
+}
+
+#face-text{
+    font-size: 13px;
+    color: #737373;
+
+    margin: 0;
+}
+
+#face-text:hover{
+    text-decoration: none;
+}
+
+#assign-now-div span{
+    margin-right: 3px;
+}
+
+#assign-now-div{
+    font-size: 16px;
+    color: #737373;
+
+    margin-bottom: 10px;
+}
+
+#assign-now-div a{
+    font-size: 16px;
+}
+
+#recaptcha-link{
+    font-size: 13px;
+    color: rgb(39, 139, 253);
+}
+
+#recaptcha-text{
+    font-size: 13px;
+    color: var(--cinza);
+}
+
+/*footer-----------------------------*/
+
+
+
+footer{
+    background: rgba(0, 0, 0, 0.842);  
+
+    grid-area: "f";
+
+    display: flex;
+    flex-direction: column;
+
+
+    padding: 30px 0 50px 20%;
+}
+
+#doubts-div, #ul-div, #language-div{
+    color: var(--cinza)
+}
+
+#doubts-div{
+    margin-bottom: 30px;
+}
+
+#ul-div{
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{
+    width: 25%;
+
+    margin-bottom: 12px;
+}
+
+li:nth-child(6){
+    margin-right: 50%;
+}
+
+li a{
+    color: var(--cinza);
+
+    font-size: 13px;
+}
+
+select{
+    width: 160px;
+    height: 47px;    
+
+    background: rgba(0, 0, 0, 0.842); 
+    
+    color: var(--cinza);
+
+    padding: 16px 26px 12px 50px;
+
+    font-size: 13px;
+}
+
+
+/*Media queries*/
+
+/*Mobile S*/
+@media (max-width: 790px){
+
+    .container{
+        background-image: none;
+
+        height: 938px;
+
+        grid-template-columns: auto;
+        grid-template-rows: 88px 500px 350px;
+    
+        grid-template-areas: 
+                            "h"
+                            "m"
+                            "f";
+    }
+
+    header, main, footer{
+        background-color: black;
+    }
+    
+
+    footer{
+        padding-left: 30px;
+
+        border-top: 1px solid rgb(146, 146, 146);
+    }
+
+    li{
+        width: 33.33%;
+    }
+
+    li:nth-child(6){
+        margin-right: 0;
+    }
+
+    #form-div{
+        width: 100%;
+        height: 100%;
+
+        padding: 15px 15px;
+
+        background-color: transparent;
+    }
+}

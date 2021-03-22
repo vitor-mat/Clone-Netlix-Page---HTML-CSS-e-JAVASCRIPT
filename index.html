@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img id="logo" src="./img/netflix_logo.png" alt="">
+        </header>
+        <main>
+            <div id="form-div">
+                <h1>Entrar</h1>
+                <form>
+                    <input type="email" placeholder="Email ou número de telefone">
+                    <input type="password" placeholder="Senha">
+                </form>
+                <button>Entrar</button>
+                <div id="remember-div">
+                    <input type="checkbox" id="check">
+                    <label id="label-check" for="check"><div id="fake-check"></div>Lembre-se de mim</label>
+                    <a href="#">Precisa de ajuda?</a>
+                </div>
+                <div id="face-div">
+                    <img id="face-icon" src="https://assets.nflxext.com/ffe/siteui/login/images/FB-f-Logo__blue_57.png" alt="">
+                    <a id="face-text" href="#">Conectar com o Facebook</a>
+                </div>
+                <div id="assign-now-div">
+                    <span>Novo por aqui?</span>
+                    <a id="assign-text" href="#">Assine agora</a>
+                </div>
+                <div id="recaptcha-div">
+                    <span id="recaptcha-text">
+                        Esta página é protegida pelo Google reCAPTCHA 
+                        para garantir que você não é um robô.
+                    </span>
+                    <a id="recaptcha-link" href="#">Saiba mais.</a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="doubts-div">
+                <span>Dúvidas? Ligue 0800-761-4631</span>
+            </div>
+            <div id="ul-div">
+                <ul>
+                    <li><a href="#">Perguntas frequentes</a></li>
+                    <li><a href="#">Centro de ajuda</a></li>
+                    <li><a href="#">Termos de uso</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Preferências de cookies</a></li>
+                    <li><a href="#">Informações corporativas</a></li>
+                </ul> 
+            </div>
+            <div id="language-div">
+                <select name="" id="language">
+                    <option value="portuguese">Português</option>
+                    <option value="english">Inglês</option>
+                </select>
+            </div>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
