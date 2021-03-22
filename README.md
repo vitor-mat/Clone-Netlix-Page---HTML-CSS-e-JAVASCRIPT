@@ -9,6 +9,7 @@ Clone da página de login do Netflix com html, css e javscript vanilla.
 - Features
 - Demonstração da Aplicação
 - Como Rodar a Aplicação
+- Pré Requisitos Para Rodar a Aplicação
 - Tecnologias utilizadas
 - Autor
 
@@ -30,9 +31,13 @@ Clone da página de login do Netflix com html, css e javscript vanilla.
 ### Clone Netflix Mobile
 ![Imgur](https://i.imgur.com/dhNfNeo.png)
 
+## Pré Requisitos Para Rodar a Aplicação
+
+Você precisa simplesmente de um browser de internet (navegador).
+
 ## Como Rodar a Aplicação
 
-Para Ver a aplicação, basta ter um navegador de internet e abri o index html no mesmo.
+Para Ver a aplicação, abri o index html no seu navegador de internet.
 
 ## Tecnologias Utilizadas
 
